@@ -13,6 +13,6 @@ class RequestTimer
     headers["Server-Timing"] = "app;dur=#{(elapsed * 1000).round(1)}"
     headers["X-Request-Path"] = env["PATH_INFO"]
 
-    [status, headers, body]
+    [ status, headers, body ]
   end
 end
